@@ -3,7 +3,7 @@ const args = process.argv[2];
 if (isNaN(Number(args))) {
   console.log('Missing size');
 } else {
-  for (const i = 0; i < Number(args); i++) {
+  for (let i = 0; i < Number(args); i++) {
     console.log('X'.repeat(args));
   }
 }
