@@ -7,4 +7,3 @@ if (isNaN(Number(args))) {
     console.log('X'.repeat(args))
   }
 }
-
