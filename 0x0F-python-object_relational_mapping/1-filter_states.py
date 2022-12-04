@@ -15,5 +15,6 @@ if __name__ == "__main__":
     cursor.execute("SELECT * FROM states WHERE name like binary 'N%' ORDER BY id ASC")
     states = cursor.fetchall()
 
-for state in states:
-    print(state)
+    for state in states:
+        print(state)
+        
