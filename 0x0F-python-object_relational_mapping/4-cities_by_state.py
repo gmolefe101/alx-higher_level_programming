@@ -18,7 +18,9 @@ if __name__ == "__main__":
                         ON state_id=states.id\
                         ORDER BY cities.id ASC")
         list_of_tuples = cursor.fetchall()
+
         for _tuple in list_of_tuples:
             print(_tuple)
+            
         cursor.close()
         db.close()
