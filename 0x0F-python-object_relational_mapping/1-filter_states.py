@@ -12,9 +12,5 @@ if __name__ == "__main__":
         passwd=sys.argv[2],
         db=sys.argv[3])
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states WHERE name like binary 'N%' ORDER BY id ASC")
-    states = cursor.fetchall()
-
-    for state in states:
-        print(state)
-        
+    cursor.execute("SELECT * FROM `states` ORDER BY `id`")
+    [print(state) for state in cursor.fetchall() if state[1][0] == "N"]
