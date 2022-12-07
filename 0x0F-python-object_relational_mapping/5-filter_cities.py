@@ -3,6 +3,8 @@
 """ a script that takes in the name of a state as an argument and lists all cities of that state, 
 using the database hbtn_0e_4_usa"""
 
+import sys
+import MySQLdb
 
 def main(args):
     # gets all CITY stuff
@@ -19,7 +21,5 @@ def main(args):
     states = cur.fetchall()
     print(", ".join(map(lambda x: "%s" % x, states)))
 
-if __name__ == "__main__":
-    import sys
-    import MySQLdb
-    main(sys.argv)
+    if __name__ == "__main__":
+        main(sys.argv)
