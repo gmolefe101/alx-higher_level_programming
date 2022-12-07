@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# gets all CITIES
+""" Gets all CITIES  from the Database"""
 
 
 def main(args):
