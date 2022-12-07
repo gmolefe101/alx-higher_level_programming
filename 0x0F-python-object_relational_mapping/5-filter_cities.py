@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 
-"""
- List all Cities
-"""
+
 def main(args):
     # gets all CITY stuff
     if len(args) != 5:
@@ -22,4 +20,3 @@ if __name__ == "__main__":
     import sys
     import MySQLdb
     main(sys.argv)
-    
