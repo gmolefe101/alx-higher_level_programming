@@ -22,6 +22,7 @@ if __name__ == "__main__":
 
         for _tuple in list_of_tuples:
             print(_tuple)
-            
+
         cursor.close()
         db.close()
+        
