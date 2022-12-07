@@ -4,10 +4,10 @@
  List all Cities
 """
 def main(args):
-    # gets all CITY stuff
+    
     if len(args) != 5:
         raise Exception("need 4 arguments!")
-        
+
     db = MySQLdb.connect(host='localhost',
                          user=args[1],
                          passwd=args[2],
