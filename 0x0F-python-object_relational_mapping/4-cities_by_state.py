@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Lists all cities from the database."""
 
 import sys
